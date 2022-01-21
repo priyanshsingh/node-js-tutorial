@@ -6,10 +6,12 @@ const fs = require('fs');
         }
         console.log(data.toString());
     })
-
+    console.log("last line");
 
 //  writing files
-
+    fs.writeFile('./docs/blog2.txt', 'hello, world', () => {
+        console.log("File is written");
+    })
 
 
 //  directories
