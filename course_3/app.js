@@ -1,10 +1,10 @@
 const express = require("express");
-const req = require("express/lib/request");
 const morgan = require("morgan");
 
 const PORT = process.env.PORT || 5000;
 
 const app = express();
+app.use(express.json());
 app.use(morgan("tiny"));
 
 app.get('/', (req, res) => {
@@ -33,6 +33,18 @@ app.get('/search', (req, res) => {
     res.json({
         'keyword':keyword,
         'limit':limit
+    })
+});
+
+app.post('/login', (req, res) => {
+    console.log('req.body :>> ', req.body);    
+    const {name, phone_no, email} = req.body;
+
+    
+    // const {keyword, limit} = req.query;
+    console.log(`Handling POST`);
+    res.json({
+        name, phone_no, email
     })
 });
 
