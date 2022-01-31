@@ -29,7 +29,7 @@ app.get('/search', (req, res) => {
     console.log('req.query :>> ', req.query);
     
     const {keyword, limit} = req.query;
-    console.log(`Hitting /about`);
+    console.log(`Hitting / about`);
     res.json({
         'keyword':keyword,
         'limit':limit
@@ -50,6 +50,9 @@ app.post('/login', (req, res) => {
 
 
 
-app.listen(PORT, () => {
+app.listen(PORT, (err) => {
+    if(err){
+        console.log(err);
+    }
     console.log(`Server started on ${PORT}`);
 });
