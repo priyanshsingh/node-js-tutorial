@@ -1,17 +1,15 @@
 {
-  "name": "course_3",
+  "name": "express_server",
   "version": "1.0.0",
-  "main": "app.js",
+  "description": "",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "priyansh",
   "license": "ISC",
   "dependencies": {
-    "cookie-parser": "^1.4.6",
     "express": "^4.17.3",
     "morgan": "^1.10.0"
-  },
-  "devDependencies": {},
-  "description": ""
+  }
 }

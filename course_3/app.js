@@ -1,7 +1,7 @@
 const express = require("express");
 const morgan = require("morgan");
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5000; // env variables that cannot be uploade on git, so for security purposes we secure them in other files
 
 const app = express();
 app.use(express.json());

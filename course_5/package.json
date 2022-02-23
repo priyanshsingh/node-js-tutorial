@@ -1,7 +1,8 @@
 {
-  "name": "course_3",
+  "name": "course_5",
   "version": "1.0.0",
-  "main": "app.js",
+  "description": "",
+  "main": "app2.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -9,9 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "cookie-parser": "^1.4.6",
-    "express": "^4.17.3",
+    "express": "^4.17.2",
     "morgan": "^1.10.0"
-  },
-  "devDependencies": {},
-  "description": ""
+  }
 }
