@@ -1,5 +1,7 @@
 CheatSheet for MongoDB commands:
 
+
+***********************GENERAL COMMANDS*************************
 1. show dbs -> shows all the databases of MongoDB
 
 2. db -> returns the name of db in which you are in
@@ -13,4 +15,39 @@ CheatSheet for MongoDB commands:
 6. db.createCollection('collection_name') -> Creates the collections in the db
 
 7. db.collection_name.drop() -> Drops the collection that is entered in the commands
+
+
+***********************COMMANDS FOR ROWS*************************
+8. Inserts one Row
+
+    db.content.insert({
+        'name':'Priyansh',
+        'language':'JavaScript',
+        'member_since':5
+    })
+
+9. Inserts Many Rows
+
+    db.content.insert([{
+        'name':'Priyansh',
+        'language':'JavaScript',
+        'member_since':5
+    },
+    {
+        'name':'Parth',
+        'language':'HTML',
+        'member_since':6
+    },
+    {
+        'name':'Nitin',
+        'language':'Ruby',
+        'member_since':3
+    }])
+
+10. Show all rows in a collection
+
+    db.<collection_name>.find()
+    **********OR**************
+    db.<collection_name>.find().pretty()
+
 
