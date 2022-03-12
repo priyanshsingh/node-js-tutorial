@@ -1,0 +1,16 @@
+CheatSheet for MongoDB commands:
+
+1. show dbs -> shows all the databases of MongoDB
+
+2. db -> returns the name of db in which you are in
+
+3. use _name_ -> creates a new database with the name that has been entered and uses that
+
+4. db.dropDatabase() -> drops/deletes the database in which you are present
+
+5. show collections -> shows all the connections that are present in that particular database
+
+6. db.createCollection('collection_name') -> Creates the collections in the db
+
+7. db.collection_name.drop() -> Drops the collection that is entered in the commands
+
