@@ -82,4 +82,9 @@ CheatSheet for MongoDB commands:
         'member_since':10
     },{upsert:true})  
 
+14. Increment operator in MONGODB 
+
+    db.content.update({name:'Parth'},{
+        $inc:{member_since:2}
+    })
     
