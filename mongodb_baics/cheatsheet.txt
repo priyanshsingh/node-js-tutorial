@@ -49,5 +49,37 @@ CheatSheet for MongoDB commands:
     db.<collection_name>.find()
     **********OR**************
     db.<collection_name>.find().pretty()
+    **********OR**************
+    db.<collection_name>.find().pretty().limit(2)
+    **********OR**************
+    db.<collection_name>.find().count()
+    **********OR**************
+    db.content.find().sort({member_since:1}).pretty()
 
 
+
+11. Find rows in a collection:
+
+    db.content.find({language:'JavaScript'})
+    db.content.find({language:'JavaScript', name:'Priyansh'})
+    db.content.find({language:'JavaScript', name:'Priyansh'})
+    db.content.findOne({name:'Priyansh'})
+
+
+12. Update a Row:
+    db.content.update({name:'Priyansh'},
+    {
+        'name':'Priyansh',
+        'language':'JavaScript',
+        'member_since':10
+    })  
+
+13. Update a Row which dosen't exist i.e. upsert a Row:
+    db.content.update({name:'Shubham'},
+    {
+        'name':'Amit',
+        'language':'JavaScript',
+        'member_since':10
+    },{upsert:true})  
+
+    
